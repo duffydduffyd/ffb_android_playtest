@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hidekeyboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/common_header" />
+
+    <com.foodfeedback.settings.VerticalScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar" >
+
+        <RelativeLayout
+            android:id="@+id/hidekeyboardd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLat1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/completeprofile_bubble_height"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bubble"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/labelTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/completeprofile_bubbletxt_marginbottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/complete_profile_txt"
+                            android:textSize="@dimen/completeprofile_bubbletxt_size" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/profileimage_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="@dimen/completeprofile_textarea_margintop"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            android:id="@+id/profileimage_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/profile_image"
+                            android:text="@string/settings_profile_image"
+                            android:textSize="@dimen/list_item_text_size"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="3dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/person_placeholder_small" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/setting_separator_background" >
+                        </View>
+                    </RelativeLayout>
+                    <!-- <LinearLayout -->
+                    <!-- android:id="@+id/profileimage_layout" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="80dp" -->
+                    <!-- android:layout_marginLeft="15dp" -->
+                    <!-- android:layout_marginRight="15dp" -->
+                    <!-- android:layout_marginTop="@dimen/completeprofile_textarea_margintop" -->
+                    <!-- android:background="@drawable/textarea" -->
+                    <!-- android:gravity="center_vertical" -->
+                    <!-- android:orientation="horizontal" > -->
+
+
+                    <!-- <ImageView -->
+                    <!-- android:id="@+id/profile_image" -->
+                    <!-- android:layout_width="55dp" -->
+                    <!-- android:layout_height="55dp" -->
+                    <!-- android:layout_alignParentLeft="true" -->
+                    <!-- android:layout_centerVertical="true" -->
+                    <!-- android:layout_marginLeft="10dp" -->
+                    <!-- android:layout_marginRight="10dp" -->
+                    <!-- android:padding="3dp" -->
+                    <!-- android:scaleType="fitCenter" -->
+                    <!-- android:src="@drawable/person_placeholder_small" /> -->
+
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/profileimage_txt" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginLeft="25dp" -->
+                    <!-- android:text="@string/profile_image" -->
+                    <!-- android:textSize="17sp" /> -->
+                    <!-- </LinearLayout> -->
+
+                    <TextView
+                        android:id="@+id/foodinterests_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/completeprofile_textarea_margintop"
+                        android:text="@string/food_interests_goals"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/food_interests"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/white"
+                        android:gravity="top|left"
+                        android:textSize="@dimen/loginscreen_txt_size" 
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxHeight="@dimen/completeprofile_textarea_height"
+                        android:minHeight="@dimen/completeprofile_textarea_height"
+                        android:padding="4dp"
+                        android:scrollbars="vertical" >
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/continue_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/completeprofile_button_height"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="@dimen/completeprofile_textarea_margintop"
+                        android:background="@drawable/redbar_button"
+                        android:text="@string/continue_tag"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/completeprofile_buttontxt_size" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.foodfeedback.settings.VerticalScrollview>
+
+    <RelativeLayout
+        android:id="@+id/profilePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/black_border"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/dialog_removecoach"
+            layout="@layout/profile_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

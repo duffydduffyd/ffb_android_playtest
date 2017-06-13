@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:layout_height="65dip"
+    android:layout_weight="1"
+    android:background="@drawable/tab_indicator"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tab_coaches_focus" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TabText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:textSize="10.50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/statusUpdateCoach"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/icon"
+        android:background="@drawable/notification"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="1dp"
+        android:textColor="@color/White"
+        android:visibility="gone" />
+
+</RelativeLayout>

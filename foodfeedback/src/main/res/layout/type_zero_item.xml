@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/eating_healthy"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    >
+    
+    
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+         />
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    >
+    
+    <ImageView 
+        android:id="@+id/radioButton"
+        android:layout_width="@dimen/findcoach_goals_radio_widthheight"
+        android:layout_height="@dimen/findcoach_goals_radio_widthheight"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        />
+   
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/radioButton"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eating_healthy"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/findcoach_goals_txt_size" />
+
+        <TextView
+            android:id="@+id/answer_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/findcoach_goals_innertxt_margintop"
+            android:layout_marginTop="@dimen/findcoach_goals_innertxt_margintop"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:text="@string/i_like_improve_mydiet"
+            android:textSize="@dimen/findcoach_goals_txt2_size" />
+    </LinearLayout>
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/vieww"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

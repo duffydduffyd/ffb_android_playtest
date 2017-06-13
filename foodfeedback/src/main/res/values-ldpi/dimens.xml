@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Common Header -->
+
+    <dimen name="header_height">45dp</dimen>
+    <dimen name="header_txt_size">18sp</dimen>
+    <dimen name="header_image_alignment">6dp</dimen>
+
+    <!-- Introduction Screen -->
+
+	<dimen name="introduction_logo_height">140dp</dimen>
+    <dimen name="introduction_logo_margintop">10dp</dimen>
+
+    <dimen name="introduction_txtlayout_margintop">30dp</dimen>
+    <dimen name="introduction_txt_size">14sp</dimen>
+    
+    <dimen name="introduction_getstarted_button_height">50dp</dimen>
+    <dimen name="introduction_getstarted_button_margintop">30dp</dimen>
+    <dimen name="introduction_getstarted_button_marginbottom">20dp</dimen>
+    <dimen name="introduction_getstarted_button_alignment">15dp</dimen>
+    
+    <!-- Login Screen -->
+	
+	<dimen name="loginscreen_edittext_height">40dp</dimen>
+    <dimen name="loginscreen_loginbutton_height">40dp</dimen>
+    <dimen name="loginscreen_logintxt_size">16sp</dimen>
+    <dimen name="loginscreen_txt_size">16sp</dimen>
+    <dimen name="loginscreen_createaccount_button_margintop">20dp</dimen>
+	
+
+    <!-- Create Account Screen -->
+
+	<dimen name="createaccount_edittextlayout_margintop">10dp</dimen>
+    <dimen name="createaccount_edittext_height">40dp</dimen>
+    <dimen name="createaccount_edittext_alignment">15dp</dimen>
+    <dimen name="createaccount_edittext_margintop">10dp</dimen>
+    <dimen name="createaccount_edittext_paddingleft">6dp</dimen>
+    
+    <dimen name="createaccount_button_height">40dp</dimen>
+    <dimen name="createaccount_button_margintop">20dp</dimen>
+    <dimen name="createaccount_button_alignment">15dp</dimen>
+    <dimen name="createaccount_txt_size">18sp</dimen>
+    
+    <integer name="createaccount_edittext_ems">10</integer>
+
+    <!-- Forgot Password Dialog -->
+
+	<dimen name="forgotpassword_txt_size">16sp</dimen>
+    <dimen name="forgotpassword_edittext_height">35dp</dimen>
+
+    <!-- IAccept Terms Screen -->
+
+    <dimen name="iaccept_bottomimage_height">50dp</dimen>
+    <dimen name="iaccept_txt_size">19sp</dimen>
+
+	<!-- FindaCoach Screen -->
+
+    <dimen name="findacoach_bubble_height">70dp</dimen>
+    <dimen name="findacoach_bubbletxt_size">15sp</dimen>
+    <dimen name="findacoach_bubbletxt_marginbottom">3dp</dimen>
+    
+    <dimen name="findacoach_button_height">45dp</dimen>
+    <dimen name="findacoach_buttontxt_size">16sp</dimen>
+	<dimen name="findacoach_buttontxt_margintop">25dp</dimen>
+	
+		<!-- Complete Profile Screen -->
+
+    <dimen name="completeprofile_bubble_height">70dp</dimen>
+    <dimen name="completeprofile_bubbletxt_size">15sp</dimen>
+    <dimen name="completeprofile_bubbletxt_marginbottom">3dp</dimen>
+    
+    <dimen name="completeprofile_button_height">45dp</dimen>
+    <dimen name="completeprofile_buttontxt_size">16sp</dimen>
+	<dimen name="completeprofile_buttontxt_margintop">25dp</dimen>
+	
+	<dimen name="completeprofile_textarea_margintop">20dp</dimen>
+	<dimen name="completeprofile_textarea_height">60dp</dimen>
+	
+	<dimen name="completeprofile_profileimage_margintop">-0.5dp</dimen>
+	<dimen name="completeprofile_profileimage_marginbottom">0dp</dimen>
+	
+		<!-- FindCoach Goals Screen -->
+
+    <dimen name="findcoach_goals_txt_margintop">20dp</dimen>
+    <dimen name="findcoach_goals_txt_size">14sp</dimen>
+    <dimen name="findcoach_goals_txt2_size">14sp</dimen>
+    <dimen name="findcoach_goals_txttwo_margintop">3dp</dimen>
+    <dimen name="findcoach_goals_line_margintop">15dp</dimen>
+    
+    <dimen name="findcoach_goals_layout_margintop">6dp</dimen>
+    <dimen name="findcoach_goals_layoutchange_margintop">3dp</dimen>
+    <dimen name="findcoach_goals_layout_height">92dp</dimen>
+    
+    <dimen name="findcoach_goals_radio_widthheight">25dp</dimen>
+    <dimen name="findcoach_goals_innertxt_margintop">2dp</dimen>
+	
+    <dimen name="findcoach_goals_button_margintop">7dp</dimen>
+    <dimen name="findcoach_goals_button_height">40dp</dimen>
+    
+    <dimen name="findcoach_kinds_layout_margintop">-30dp</dimen>
+    <dimen name="findcoach_kinds_button_margintop">13dp</dimen>
+    
+            <!-- Question Eater Screen -->
+    
+    <dimen name="question_eater_txtone_margintop">15dp</dimen>
+    <dimen name="question_eater_txttewo_margintop">6dp</dimen>
+    <dimen name="question_eater_line_margintop">5dp</dimen>
+    
+    <dimen name="question_eater_layout_margintop">20dp</dimen>
+    <dimen name="question_eater_layout_height">55dp</dimen>
+    <dimen name="question_eater_button_margintop">20dp</dimen>
+    
+    <!-- Question Age Screen -->
+    
+    <dimen name="question_age_txtone_height">80dp</dimen>
+    <dimen name="question_age_button_margintop">20dp</dimen>
+    
+    <dimen name="question_age_editfield_margintop">20dp</dimen>
+    <dimen name="question_age_maintxt_margintop">8dp</dimen>
+    
+    <dimen name="question_age_editfield_widthtwo">40dp</dimen>
+    <dimen name="question_age_editfield_widthfour">60dp</dimen>
+      
+    <integer name="icon_size">75</integer>
+	<dimen name="grid_col_width">80dp</dimen>
+	<dimen name="grid_horizontal_spacing">1dp</dimen>
+	<dimen name="grid_vertical_spacing">1.5dp</dimen>
+	
+	<dimen name="plus_image_size">15dp</dimen>
+	<dimen name ="list_item_text_size">18dp</dimen>    
+	<dimen name ="pending_coaches_padding">6dp</dimen>
+	<dimen name ="list_icon_size">55dp</dimen>
+    <dimen name ="settings_text_size">16dp</dimen>  
+    <dimen name="settings_arrow_image_size">14dp</dimen>
+    
+     <dimen name="txtarea_foodintgoald">70dp</dimen>
+	 <dimen name="edit_name">120dp</dimen>
+	 <dimen name="snap_display_height">180dip</dimen>
+	   <dimen name="temp_button">16sp</dimen>
+	   
+	   <integer name="icon_size_tracker">50</integer>
+	   <dimen name="image_tracker">145dp</dimen>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/message_first_header" />
+
+    <com.foodfeedback.draglists.DynamicListViewCoaches
+        android:id="@+id/coaches_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp" />
+
+    <include
+        android:id="@+id/footer"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        layout="@layout/add_coach_view"
+        android:visibility="visible" />
+
+</LinearLayout>

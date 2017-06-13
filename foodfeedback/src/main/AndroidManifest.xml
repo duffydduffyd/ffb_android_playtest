@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.foodfeedback.onboarding"
+    android:hardwareAccelerated="false"
+    android:versionCode="11"
+    android:versionName="1.0" >
+
+    <compatible-screens>
+
+        <!-- all small size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="small" />
+        <!-- all normal size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+
+        <!-- all large size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="large" />
+
+        <!-- support for Xperia Z, Galaxy S4 and HTC One -->
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="large" />
+    </compatible-screens>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
+
+    <uses-sdk
+        android:hardwareAccelerated="false"
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.foodfeedback.onboarding.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.foodfeedback.onboarding.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <application
+        android:name="com.foodfeedback.onboarding.Controller"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.foodfeedback.onboarding.IntroActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.foodfeedback.onboarding.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.foodfeedback.coaches.CoachInvitationResponseActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.foodfeedback.onboarding.RegisterActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.onboarding.CompleteProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.coaches.CoachDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.coaches.CoachSearchListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.onboarding.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.onboarding.AcceptTermsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.onboarding.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.onboarding.QuestionaireActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.messages.MessagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.messages.MessagePhotoView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.myfood.MyFoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.photo.TakePhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.weighttracker.WeightTrackerActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.coaches.CoachesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.weighttracker.PhotoFullScaleViewer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.onboarding.FoodTabActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DELETE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="com.foodfeedback.onboarding" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.foodfeedback.coaches.CoachDeleteActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.foodfeedback.myfood.FoodGalleryFlipper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.photo.CameraActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.foodfeedback.photo.ShareTakePicture"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.settings.SettingsActivity"
+            
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.onboarding.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodfeedback.photo.MultipleShare"
+            android:screenOrientation="portrait" />
+        
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.foodfeedback.onboarding" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.foodfeedback.onboarding.GCMIntentService" />
+
+        <meta-data
+            android:name="LOCALYTICS_APP_KEY"
+            android:value="9df0a581383da31f871f958-4a5ee60a-2836-11e4-23e0-004a77f8b47f" />
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="bd0161598a368743e4a041db9792335804f5fee7" />
+    </application>
+
+</manifest>

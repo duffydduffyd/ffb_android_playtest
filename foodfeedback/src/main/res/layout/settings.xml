@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/topbar"
+        android:background="@color/setting_separator_background" >
+    </View>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:background="@color/setting_blank_cell_background"
+        android:scrollbarStyle="insideOverlay" >
+
+        <LinearLayout
+            android:id="@+id/scroll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- First Blank Row -->
+
+            <LinearLayout
+                android:id="@+id/first_cell"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/setting_separator_background" >
+            </View>
+            <!-- Edit profile Row -->
+
+            <RelativeLayout
+                android:id="@+id/edit_profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/txt_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/settings_edit_profile"
+                    android:textSize="@dimen/list_item_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/settings_arrow_image_size"
+                    android:layout_height="@dimen/settings_arrow_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/disclosure_indicator" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/setting_separator_background" >
+                </View>
+            </RelativeLayout>
+
+            <!-- Preferences Row -->
+
+            <RelativeLayout
+                android:id="@+id/preferences_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/txt_preferences_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/settings_preferences"
+                    android:textSize="@dimen/list_item_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/settings_arrow_image_size"
+                    android:layout_height="@dimen/settings_arrow_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/disclosure_indicator" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_separator_background" >
+                </View>
+            </RelativeLayout>
+            <!-- Blank Row -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal" />
+            <!-- About Row -->
+
+            <RelativeLayout
+                android:id="@+id/about_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_about_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/settings_about"
+                    android:textColor="@color/ffred"
+                    android:textSize="@dimen/list_item_text_title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_separator_background" >
+                </View>
+            </RelativeLayout>
+
+            <!-- About food feedback -->
+
+            <RelativeLayout
+                android:id="@+id/about_food_feedback_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/txt_about_food_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/settings_about_foodfeedback"
+                    android:textSize="@dimen/list_item_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/settings_arrow_image_size"
+                    android:layout_height="@dimen/settings_arrow_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/disclosure_indicator" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/setting_separator_background" >
+                </View>
+            </RelativeLayout>
+
+            <!-- invite a friend -->
+
+            <RelativeLayout
+                android:id="@+id/invite_friend_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/txt_invite_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/settings_invite_friend"
+                    android:textSize="@dimen/list_item_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/settings_arrow_image_size"
+                    android:layout_height="@dimen/settings_arrow_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/disclosure_indicator" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/setting_separator_background" >
+                </View>
+            </RelativeLayout>
+
+            <!-- Send Feedback -->
+
+            <RelativeLayout
+                android:id="@+id/send_feedback_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/txt_send_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/settings_send_feedback"
+                    android:textSize="@dimen/list_item_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/settings_arrow_image_size"
+                    android:layout_height="@dimen/settings_arrow_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/disclosure_indicator" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/setting_separator_background" >
+                </View>
+            </RelativeLayout>
+            <!-- Legal & Privacy -->
+
+            <RelativeLayout
+                android:id="@+id/legal_privacy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/txt_legal_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/settings_legal_and_privacy"
+                    android:textSize="@dimen/list_item_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/settings_arrow_image_size"
+                    android:layout_height="@dimen/settings_arrow_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/disclosure_indicator" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_separator_background" >
+                </View>
+            </RelativeLayout>
+
+            <!-- Blank -->
+
+            <!-- Blank Row -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/setting_separator_background" >
+            </View>
+
+            <!-- Log Out -->
+
+            <RelativeLayout
+                android:id="@+id/logout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/txt_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/settings_log_out"
+                    android:textSize="@dimen/list_item_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_separator_background" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/version_layout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/txt_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/settings_version"
+                    android:textColor="#624E42"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

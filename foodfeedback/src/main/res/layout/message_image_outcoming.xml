@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imp_layout"
+    android:layout_width="match_parent"
+    android:layout_height="160dp" >
+
+    <ImageView
+        android:id="@+id/outgoing_photobg"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:alpha="1"
+        android:background="@color/White"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/foodimagebg" />
+
+    <ImageView
+        android:id="@+id/outgoing_profilebg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/image_border"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder_bio" />
+
+</RelativeLayout>

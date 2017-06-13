@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for individual news entries in a list -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/load_moremessages"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:gravity="center_vertical|center"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:text="@string/load_moremessages"
+        android:textColor="@color/grey" />
+
+    <LinearLayout
+        android:id="@+id/image_incoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <include
+            android:id="@+id/image_incomingggg"
+            layout="@layout/message_image_incoming" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text_incoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <include
+            android:id="@+id/text_incominggg"
+            layout="@layout/conversation_item_me" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_outgoing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <include
+            android:id="@+id/image_outgoinggg"
+            layout="@layout/message_image_outcoming" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text_outgoing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <include
+            android:id="@+id/text_outgoinggg"
+            layout="@layout/conversation_item_other" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33302E"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="#F3F3F2" >
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/header_image_alignment"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/backarrow" />
+
+            <TextView
+                android:id="@+id/center_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/header_txt_size" />
+
+            <ImageView
+                android:id="@+id/delete_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/delete_photo" />
+
+            <ImageView
+                android:id="@+id/share_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/header_image_alignment"
+                android:src="@drawable/share_photo" />
+        </LinearLayout>
+
+        <com.foodfeedback.GalleryWidget.GalleryViewPager
+            android:id="@+id/viewer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/send_message_footer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="#F6F5F5"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/message_textbox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_colorshape"
+                android:hint=""
+                android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/list_item_text_size" />
+
+            <TextView
+                android:id="@+id/sendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:text="@string/send_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/black_border"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/dialog_removecoach"
+            layout="@layout/dialog_deletephoto" />
+    </RelativeLayout>
+
+</RelativeLayout>

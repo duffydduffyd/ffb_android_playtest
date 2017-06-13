@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tracker_previewh" />
+
+        <TextView
+            android:id="@+id/tracker_intro_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/white"
+            android:paddingTop="0dp"
+            android:gravity="left"
+            android:padding="15dp"
+            android:singleLine="false"
+            android:text="@string/tracker_txt"
+            android:textColor="@color/grey" />
+
+        <Button
+            android:id="@+id/purchaseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_height"
+            android:layout_margin="10dp"
+            android:background="@drawable/unfocus_redimage"
+            android:enabled="false"
+            android:text="@string/checking_purchase"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</ScrollView>

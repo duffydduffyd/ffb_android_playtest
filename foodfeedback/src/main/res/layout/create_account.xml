@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/common_header" />
+
+    <ScrollView
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/firstname_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/createaccount_edittext_height"
+                android:layout_marginLeft="@dimen/createaccount_edittext_alignment"
+                android:layout_marginRight="@dimen/createaccount_edittext_alignment"
+                android:background="@drawable/textarea"
+                android:ems="@integer/createaccount_edittext_ems"
+                android:hint="@string/first_name"
+                android:paddingLeft="@dimen/createaccount_edittext_paddingleft"
+                android:singleLine="true" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/lastname_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/createaccount_edittext_height"
+                android:layout_marginLeft="@dimen/createaccount_edittext_alignment"
+                android:layout_marginRight="@dimen/createaccount_edittext_alignment"
+                android:layout_marginTop="@dimen/createaccount_edittext_margintop"
+                android:background="@drawable/textarea"
+                android:ems="@integer/createaccount_edittext_ems"
+                android:hint="@string/last_name"
+                android:paddingLeft="@dimen/createaccount_edittext_paddingleft"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/enter_email_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/createaccount_edittext_height"
+                android:layout_marginLeft="@dimen/createaccount_edittext_alignment"
+                android:layout_marginRight="@dimen/createaccount_edittext_alignment"
+                android:layout_marginTop="@dimen/createaccount_edittext_margintop"
+                android:background="@drawable/textarea"
+                android:ems="@integer/createaccount_edittext_ems"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/createaccount_edittext_paddingleft"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/choose_password_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/createaccount_edittext_height"
+                android:layout_marginLeft="@dimen/createaccount_edittext_alignment"
+                android:layout_marginRight="@dimen/createaccount_edittext_alignment"
+                android:layout_marginTop="@dimen/createaccount_edittext_margintop"
+                android:background="@drawable/textarea"
+                android:ems="@integer/createaccount_edittext_ems"
+                android:hint="@string/choose_password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/createaccount_edittext_paddingleft"
+                android:singleLine="true" />
+            
+             <Button
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/createaccount_button_height"
+                android:layout_marginLeft="@dimen/createaccount_button_alignment"
+                android:layout_marginRight="@dimen/createaccount_button_alignment"
+                android:layout_marginTop="@dimen/createaccount_button_margintop"
+                android:background="@drawable/redbar_button"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/createaccount_txt_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

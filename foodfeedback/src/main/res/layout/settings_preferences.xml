@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_container"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_blank_cell_background"
+    android:orientation="vertical" >
+
+    <!-- First Blank Row -->
+
+    <LinearLayout
+        android:id="@+id/first_cell"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/setting_separator_background" >
+    </View>
+
+    <!-- save to camera roll -->
+
+    <LinearLayout
+        android:id="@+id/savetocameraroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_savetocameraroll"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/settings_save_to_camera_roll"
+            android:textSize="@dimen/list_item_text_size" />
+
+        <com.foodfeedback.onboarding.MySwitch
+            android:id="@+id/togglebutton_savetocameraroll"
+            style="@style/mySwitchStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            mySwitch:backgroundMask="@drawable/smask_background_copy"
+            mySwitch:leftBackground="@drawable/off_background_switch"
+            mySwitch:pushStyle="true"
+            mySwitch:rightBackground="@drawable/on_background_switch"
+            mySwitch:textOff="Off"
+            mySwitch:textOn="On"
+            mySwitch:textOnThumb="false"
+            mySwitch:thumb="@drawable/stoggle_copy1"
+            mySwitch:thumbExtraMovement="7dp"
+            mySwitch:track="@drawable/on_background_switch"
+            mySwitch:trackTextPadding="4dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/setting_separator_background" >
+    </View>
+    <!-- save to camera roll desc -->
+
+    <RelativeLayout
+        android:id="@+id/savetocamerarolldesc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/txt_savetocamerarolldesc_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/settings_save_to_camera_roll_desc"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/list_item_text_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/setting_separator_background" >
+        </View>
+    </RelativeLayout>
+
+    <!-- send weekly remainder -->
+
+    <LinearLayout
+        android:id="@+id/sendweeklyremainder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/txt_sendweeklyremainder"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="@string/settings_send_weekly_remainder"
+            android:textSize="@dimen/list_item_text_size" />
+
+        <com.foodfeedback.onboarding.MySwitch
+            android:id="@+id/togglebutton_sendweeklyremainder"
+            style="@style/mySwitchStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            mySwitch:backgroundMask="@drawable/smask_background_copy"
+            mySwitch:leftBackground="@drawable/off_background_switch"
+            mySwitch:pushStyle="true"
+            mySwitch:rightBackground="@drawable/on_background_switch"
+            mySwitch:textOff="Off"
+            mySwitch:textOn="On"
+            mySwitch:textOnThumb="false"
+            mySwitch:thumb="@drawable/stoggle_copy1"
+            mySwitch:thumbExtraMovement="7dp"
+            mySwitch:track="@drawable/on_background_switch"
+            mySwitch:trackTextPadding="4dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/setting_separator_background" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/sendweeklyremainderdesc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/txt_sendweeklyremainderdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/settings_send_weekly_remainder_desc"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/list_item_text_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/setting_separator_background" >
+        </View>
+    </RelativeLayout>
+
+</LinearLayout>

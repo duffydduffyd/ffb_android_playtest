@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper_takepicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/coaches_screenn"
+            layout="@layout/activity_camera" />
+
+        <include
+            android:id="@+id/findacoach"
+            layout="@layout/takephoto_screen" />
+    </ViewFlipper>
+
+</RelativeLayout>

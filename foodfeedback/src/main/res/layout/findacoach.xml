@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/message_second_header" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLat1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/findacoach_bubble_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bubble"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/answerQuestionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/findacoach_bubbletxt_marginbottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/answer_few_questions"
+                    android:textSize="@dimen/findacoach_bubbletxt_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/continue_search"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/findacoach_button_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/findacoach_buttontxt_margintop"
+                android:background="@drawable/redbar_button"
+                android:text="@string/continue_tag"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/findacoach_buttontxt_size" />
+
+            <Button
+                android:id="@+id/searchby_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/findacoach_button_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/findacoach_buttontxt_margintop"
+                android:background="@drawable/greybtn"
+                android:text="@string/search_for_coach"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/findacoach_buttontxt_size" />
+            
+            <Button
+                android:id="@+id/inviteaFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/findacoach_button_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/findacoach_buttontxt_margintop"
+                android:background="@drawable/greybtn"
+                android:text="@string/settings_invite_friend"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/findacoach_buttontxt_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

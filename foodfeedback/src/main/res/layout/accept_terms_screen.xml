@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <include
+        android:id="@+id/topbar_termsaccept"
+        layout="@layout/common_header" />
+
+    <WebView
+        android:id="@+id/webViewTerms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iaccept"
+        android:layout_below="@+id/topbar_termsaccept" />
+
+    <Button
+        android:id="@+id/iaccept"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iaccept_bottomimage_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/redbar_button"
+        android:text="@string/accept_button"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/createaccount_txt_size" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/common_header" />
+
+    <TextView
+        android:id="@+id/question_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/findcoach_goals_txt_margintop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/findcoach_goals_txt_margintop"
+        android:gravity="center"
+        android:layout_below="@+id/topbar"
+        android:textSize="@dimen/findcoach_goals_txt_size" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/question_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/findcoach_goals_line_margintop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/Black" />
+    
+    <ListView 
+       android:id="@+id/answer_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view" 
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:layout_centerHorizontal="true"
+        
+        />
+
+    <Button
+        android:id="@+id/question_complete_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/findcoach_goals_button_height"
+        android:layout_below="@+id/answer_options"
+        android:background="@drawable/redbar_button"
+        android:text="@string/continue_tag"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/White"
+        android:textSize="@dimen/findacoach_buttontxt_size" />
+
+</RelativeLayout>

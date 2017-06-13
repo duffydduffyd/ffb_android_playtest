@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_blank_cell_background"
+    android:fadeScrollbars="false"
+    android:scrollbars="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_blank_cell_background"
+        android:orientation="vertical" >
+
+        <!-- First Blank Row -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/setting_separator_background" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/profileimage_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/txt_profileimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageViewThumb"
+                android:text="@string/settings_profile_image"
+                android:textSize="@dimen/list_item_text_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewThumb"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="3dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person_placeholder_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/setting_separator_background" >
+            </View>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/setting_separator_background" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/firstname_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/txt_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/settings_firstname"
+                android:textSize="@dimen/list_item_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_firstname"
+                android:layout_width="@dimen/edit_name"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/list_item_text_size"
+                android:textStyle="normal" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:background="@color/setting_separator_background" >
+            </View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lastname_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/txt_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:singleLine="true"
+                android:text="@string/settings_lastname"
+                android:textSize="@dimen/list_item_text_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_lastname"
+                android:layout_width="@dimen/edit_name"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/list_item_text_size"
+                android:textStyle="normal" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/setting_separator_background" >
+            </View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/foodinterestgoals_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/txt_foodinterestgoals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/settings_foodinterestandgoals"
+                android:textColor="#624E42"
+                android:textSize="@dimen/list_item_text_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/setting_separator_background" >
+            </View>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_food_interests_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <EditText
+                android:id="@+id/edit_food_interests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:background="@android:color/white"
+                android:gravity="top|left"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lineSpacingExtra="2sp"
+                android:maxHeight="@dimen/txtarea_foodintgoald"
+                android:minHeight="@dimen/txtarea_foodintgoald"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:textSize="@dimen/loginscreen_txt_size" 
+                >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/setting_separator_background" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/privatecoach_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_privatecoach"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="@string/settings_privatecoach"
+                android:textSize="@dimen/list_item_text_size"
+                android:textStyle="bold" />
+
+            <com.foodfeedback.onboarding.MySwitch
+                android:id="@+id/togglebutton_privatecoach"
+                style="@style/mySwitchStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                mySwitch:backgroundMask="@drawable/smask_background_copy"
+                mySwitch:leftBackground="@drawable/off_background_switch"
+                mySwitch:pushStyle="true"
+                mySwitch:rightBackground="@drawable/on_background_switch"
+                mySwitch:textOff="Off"
+                mySwitch:textOn="On"
+                mySwitch:textOnThumb="false"
+                mySwitch:thumb="@drawable/stoggle_copy1"
+                mySwitch:thumbExtraMovement="7dp"
+                mySwitch:track="@drawable/on_background_switch"
+                mySwitch:trackTextPadding="4dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/setting_separator_background" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/privatecoachdesc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/txt_privatecoach_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/settings_privatecoach_desc"
+                android:textColor="#624E42"
+                android:textSize="@dimen/loginscreen_txt_size" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_results">No Results</string>
+    <string name="gallery_image_updated">Gallery Updated</string>
+    <string name="app_font_style_medium">fonts/Museo300-Regular.otf</string>
+    <string name="font_standard">fonts/HelveticaNeueLTStd-Lt.otf</string>
+    <string name="no_user_error">UserID does\'nt Exitst</string>
+    <string name="back_button">Back</string>
+    <string name="device_not_supported">This device is not supported</string>
+
+    <!-- Notifications -->
+    <string name="notification_header">Comida:</string>
+    <string name="notification_coachinvite">te invitó para que seas coach.</string>
+    <string name="notification_coachinvite_accepted">aceptó tu invitación para ser coach.</string>
+    <string name="notification_coachinvite_declined">rechazó tu invitación para ser coach</string>
+    <string name="notification_photo_greeting">Hola</string>
+    <string name="notification_photo_message">te acaba de enviar una nueva foto</string>
+    <string name="notification_reminder_header">COMIDA: RECORDATORIO SEMANAL</string>
+    <string name="notification_reminder_message">Hasta ahora, no has enviado ningún mensaje en una semana</string>
+
+    <!-- Tracker Module -->
+    <string name="tracker_txt">Una manera totalmente diferente de perder peso; nuestro seguidor te permite ver qué comiste entre dos mediciones de peso y de qué manera esto afecta tus resultados.</string>
+    <string name="tracker">Seguidor</string>
+    <string name="restore_purchase">Restaurar compra</string>
+    <string name="checking_purchase">Comprobación de compra...</string>
+    <string name="purchase_error">Lo sentimos, ha ocurrido un error</string>
+    <string name="purchase_amount">Compra</string>
+    <string name="record_your_weight">Registra tu peso</string>
+    <string name="hint_enter_your_weight">Ingresa tu peso</string>
+    <string name="kg">kg</string>
+    <string name="lbs">LBS</string>
+    <string name="progress_chart">Tabla de progreso</string>
+    <string name="are_sure_delete">¿Eliminar el último peso ingresado?</string>
+    <string name="app_name">Food Feedback</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="internet_connection">No hay conexión a Internet</string>
+    <string name="no_receiver">Debes seleccionar uno o más coaches</string>
+    <string name="network_connection">Verifica tu conexión a Internet</string>
+    <string name="my_food">Mi comida</string>
+
+
+    <!-- IntroView Activity -->
+
+    <string name="descline_one">Toma fotos de</string>
+    <string name="descline_two">la hermosa comida que comes.</string>
+    <string name="descline_three">Conéctate. Incentívate. Crea.</string>
+    <string name="get_started">¡Comencemos!</string>
+
+    <!-- LoginScreen Activity -->
+
+    <string name="login_topbar">Iniciar sesión/Registrarse</string>
+    <string name="hint_username">Email</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="forget_password">¿Olvidaste la contraseña?</string>
+
+    <!-- Forgot Password Dialog -->
+
+    <string name="forpasswor_descline_one">Ingresa tu dirección de email y nosotros</string>
+    <string name="forpasswor_descline_two">te enviaremos un enlace para restablecer tu</string>
+    <string name="forpasswor_descline_three">contraseña.</string>
+    <string name="forpassword_success_title">La contraseña se restableció satisfactoriamente</string>
+    <string name="forpassword_success_message">Revisa tus emails para restablecer la contraseña</string>
+    <string name="dialog_ok">Aceptar</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="an_email_must">Debes indicar un email</string>
+
+    <!-- Register Activity ( Create Account ) -->
+
+    <string name="create_an_account">Crear una cuenta</string>
+    <string name="first_name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="enter_email">Ingresa tu email</string>
+    <string name="choose_password">Elige una contraseña</string>
+    <string name="register">Registrarse</string>
+
+    <!-- Accept Terms Activity -->
+    <string name="accept_button">Aceptar</string>
+
+    <!-- Questionaire Activity -->
+    <string name="what_age_looking">¿De qué edad quieres que sea tu coach?</string>
+    <string name="any_age">Cualquier edad</string>
+    <string name="around_my_age">Aproximadamente de mi edad</string>
+    <string name="mm">MM</string>
+    <string name="dd">DD</string>
+    <string name="yyyy">AAAA</string>
+    <string name="what_type_eater">¿Qué tipo de alimentación quieres que tenga tu coach?</string>
+    <string name="omnivore">Omnívoro</string>
+    <string name="vegetarian">Vegetariano</string>
+    <string name="vegan">Vegano</string>
+    <string name="what_gender">¿De qué sexo quieres que sea tu coach?</string>
+    <string name="any_gender">Cualquier sexo</string>
+    <string name="female">Mujer</string>
+    <string name="male">Hombre</string>
+    <string name="submit">Enviar</string>
+    <string name="what_kind_foodfeedback">¿Qué tipo de comentarios sobre comidas deseas enviar y recibir?</string>
+    <string name="supportive">Alentador</string>
+    <string name="i_need_cheerleader">Necesito a alguien que me aliente</string>
+    <string name="creative">Creativo</string>
+    <string name="i_like_share">Me gustaría compartir ideas culinarias</string>
+    <string name="direct">Directo</string>
+    <string name="im_looking_coach">Busco un coach que me mantenga en línea</string>
+    <string name="what_your_food_goals">¿Cuáles son tus objetivos con Food Feedback?</string>
+    <string name="eating_healthy">Comer saludable</string>
+    <string name="i_like_improve_mydiet">Me gustaría mejorar mi dieta y nutrición.</string>
+    <string name="eating_pretty">Comer bien</string>
+    <string name="i_like_mycreations">Me gustaría compartir mis creaciones y aprender otras nuevas.</string>
+    <string name="eating_honest">Come de manera honesta, come de manera agradable</string>
+    <string name="i_exited_todo">Quiero comer de las dos maneras.</string>
+
+    <!-- Dialogs Strings -->
+    <string name="are_you_sure">¿Seguro que quieres eliminar esta foto?</string>
+    <string name="are_you_sure_logout">¿Seguro que quieres cerrar sesión?</string>
+    <string name="are_you_sure_deletecoache">¿Seguro que quieres eliminar esta persona como coach? Si lo haces, se eliminarán todos los mensajes de este coach.</string>
+    <string name="remove_coach">Eliminar coach</string>
+    <string name="error_txt">ERROR</string>
+    <string name="take_photo_dots">Tomar foto</string>
+    <string name="choose_from_library_dots">Elegir de la biblioteca</string>
+    <string name="take_picture">Tomar foto</string>
+    <string name="saved_success">Se guardó satisfactoriamente</string>
+
+    <!-- TakePhoto Activity -->
+
+    <string name="button_use_camera">Usar cámara</string>
+    <string name="button_capture_text">CAPTURAR</string>
+    <string name="content_desc_overlay">superposición</string>
+    <string name="content_desc_image_just_taken">imagen tomada recientemente</string>
+    <string name="auto_button">Automático</string>
+    <string name="on_button">Activar</string>
+    <string name="off_button">Desactivar</string>
+    <string name="share_with">Compartir con:</string>
+    <string name="initial_message">Cuéntanos sobre tu comida:</string>
+    <string name="hint_initial_message">Mensaje inicial</string>
+    <string name="share_txt">Compartir</string>
+    <string name="use_this">Usar esto</string>
+    <string name="retake">Tomar de nuevo</string>
+    <string name="photo_sent_success">La foto se envió satisfactoriamente</string>
+    <string name="message_sent_success">El mensaje se envió satisfactoriamente</string>
+
+    <!-- Chat Screen Activity -->
+    <string name="loading_txt">Cargando</string>
+    <string name="sending_txt"> Envío</string>
+    <string name="send_button">Enviar</string>
+    <string name="no_messages">No tienes ningún mensaje</string>
+    <string name="today_text">Hoy</string>
+    <string name="yesterday_test">ayer</string>
+
+    <!-- Messages module Activities -->
+    <string name="messages">Mensajes</string>
+    <string name="load_moremessages">Cargar más mensajes</string>
+
+    <!-- MyFood module activities -->
+    <string name="take_photo_next_meal">Toma una foto de tu próxima comida para que tu coach pueda hacerte comentarios</string>
+
+    <!-- Complete Profile Screen Activity -->
+    <string name="complete_profile_txt">Completa tu perfil para que podamos encontrar los mejores coaches para ti.</string>
+    <string name="profile_image">Imagen de perfil</string>
+    <string name="food_interests_goals">Intereses alimenticios y objetivos</string>
+    <string name="complete_your_profile">Completa to perfil</string>
+
+    <!-- coaches module Activity -->
+    <string name="good_match_button">Buena coincidencia</string>
+    <string name="not_for_me_button">No es para mí</string>
+    <string name="pending_coaches_label">Coaches pendientes</string>
+    <string name="add_more_coaches_label">Agregar más coaches</string>
+    <string name="congratulations_txt">¡Felicitaciones! De acuerdo a tus respuestas te hemos relacionado con los siguientes coaches.</string>
+    <string name="answer_few_questions">Responde unas preguntas para que podamos relacionarte con algunos coaches.</string>
+    <string name="search_for_coach">Busca un coach por nombre</string>
+    <string name="find_coach">Encuentra un coach</string>
+    <string name="finding_coaches">Encontrar Coaches</string>
+    <string name="coaches">Coaches</string>
+    <string name="yes_accept_invitation">Sí, aceptar invitación</string>
+    <string name="no_decline_invitation">No, declinar invitación</string>
+    <string name="select_coaches">Seleccionar coaches</string>
+    <string name="invite_success_1">acaba de enviar una invitación.\n\nCuando</string>
+    <string name="invite_success_2">responda, recibirás una notificación</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_edit_profile">Editar perfil</string>
+    <string name="settings_preferences">Preferencias</string>
+    <string name="settings_about">ACERCA DE</string>
+    <string name="settings_about_foodfeedback">Acerca de Food Feedback</string>
+    <string name="settings_invite_friend">Invita a un amigo</string>
+    <string name="settings_send_feedback">Enviar comentarios</string>
+    <string name="settings_legal_and_privacy">Aviso legal y Privacidad</string>
+    <string name="settings_log_out">Cerrar sesión</string>
+    <string name="settings_version">Versión</string>
+    <string name="about_us">Food Feedback nació con mi propia lucha por perder peso. Mi entrenador me preguntaba &quot;¿Cómo comes?&quot; Me encogía de hombros y respondía &quot;Bastante bien, creo&quot;, aunque no estaba prestando mucha atención y no perdía peso.,\n\nUn día le pregunté: &quot;¿Qué te parece si te envío una foto de todo lo que como?&quot; Si bien fue una simple idea, sabía que podía ser importante. \n\nMe detuve un poco y comencé a apreciar lo que preparaba en la cocina. Descubrí que las fotos más coloridas eran las de alimentos frescos. Me divertía compartir lo que elegía para comer y a la vez mejoraba mi alimentación. La comida me gustaba más cuando era agradable y así perdí más de 11 kilos. \n\nAhora lo que más me gusta es compartir mi comida con personas de todo el mundo, especialmente con aquellos a quienes amo. También me encanta recibir fotos de ellos. n\nEl equipo que trabajó en la creación de Food Feedback mejoró aún más las cosas y por eso les estoy muy agradecida. Come de manera honesta. Come de manera agradable. Sé creativo. Pero lo más importante es que seas un coach alentador y generoso. Estamos todos juntos en esto. \n\nCariñosamente,\nDenise Duffy</string>
+    <string name="food_feedback">\n ------ \nNos encanta que envíes comentarios. Cuéntanos cómo te entretienes con nuestra aplicación y también haznos saber si encuentras algún problema técnico que quieres que solucionemos. Escribe arriba todo lo que quieras. Incluimos algunos detalles del dispositivo para poder ayudarte mejor. \n\nVersión de la aplicación: ##VERSIÓN DE LA APLICACIÓN##\nDispositivo: Android ##MODELO##\nVersión de OS ##VERSIÖN DE OS##\nLocale: ##LOCAL## \n\nEnviado desde mi Android</string>
+    <string name="invite_friend">La aplicación Food Feedback me encanta y creo que a ti también te va a agradar\n\nObtén la aplicación para Android:\nhttp://play.google.com/com.android.foodfeedback\n\nObtén la aplicación para iOS:\nhttps://itunes.apple.com/us/app/food-feedback/id733938511\n\nVisita el sitio web:\nhttp://foodfeedback.com\n\n</string>
+    <string name="share_photo">Si deseas compartir fotos de comidas conmigo, únete a Food Feedback. ¡Es gratis!\n\nObtén la aplicación para iOS:\nhttps://itunes.apple.com/us/app/food-feedback/id733938511\n\nObtén la aplicación para Android:\nhttp://play.google.com/com.android.foodfeedback\n\nMás información:\nhttp://foodfeedback.com\n\n</string>
+    <string name="feedback_subject">Comentarios</string>
+    <string name="on">ACTIVAR</string>
+    <string name="off">DESACTIVAR</string>
+    <string name="settings_save_to_camera_roll">Guardar en el Carrete</string>
+    <string name="settings_send_weekly_remainder">Enviar recordatorio semanal</string>
+    <string name="settings_save_to_camera_roll_desc">Guarda automáticamente fotos de resolución completa en el Carrete.</string>
+    <string name="settings_send_weekly_remainder_desc">Te envía una notificación si no has enviado mensajes en una semana.</string>
+    <string name="settings_terms_of_service">Términos del servicio</string>
+    <string name="settings_privacy_policy">Política de privacidad</string>
+    <string name="settings_edit_ur_profile">Edita tu perfil</string>
+    <string name="settings_profile_image">Imagen de perfil</string>
+    <string name="settings_firstname">Nombre</string>
+    <string name="settings_lastname">Apellido</string>
+    <string name="settings_foodinterestandgoals">INTERESES ALIMENTICIOS Y OBJETIVOS</string>
+    <string name="settings_privatecoach">Coach privado</string>
+    <string name="settings_privatecoach_desc">Si seleccionas ACTIVAR, tu perfil no estará disponible para recibir recomendaciones del coach y solo se podrá descubrir mediante una búsqueda.</string>
+    <string name="settings_profile_save">Guardar</string>
+    <string name="settings_done">Listo</string>
+    <string name="email_feedback_subject">Comentarios</string>
+    <string name="email_invite_friend_subject">Únete a Food Feedback</string>
+    <string name="email_feedback_toaddress">feedback@foodfeedback.com</string>
+    <string name="settings_about_us">Quiénes somos</string>
+    <string name="send_tomy_food">Enviar a Mi comida. No compartiré ésta.</string>
+    <string name="continue_tag">Continuar</string>
+    
+    <string name="already_registered">El dispositivo ya está registrado en el servidor</string>
+    <string name="gcm_registered">De GCM: el dispositivo se registró satisfactoriamente.</string>
+    <string name="gcm_unregistered">De GCM: el registro del dispositivo se canceló satisfactoriamente.</string>
+    <string name="gcm_message">De GCM: recibiste un mensaje.</string>
+    <string name="gcm_error">De GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">De GCM: error recuperable (%1$s).</string>
+    <string name="gcm_deleted">De GCM: el servidor eliminó %1$d mensajes pendientes.</string>
+    <string name="server_registering">Intentando (intento %1$d/%2$d) registrar el dispositivo en el Servidor Demo.</string>
+    <string name="server_registered">De Servidor Demo: el dispositivo se incorporó con éxito.</string>
+    <string name="server_unregistered">De Servidor Demo: el dispositivo se eliminó con éxito.</string>
+    <string name="server_register_error">Después de %1$d intentos, el dispositivo no se pudo registrar en el Servidor Demo.</string>
+    <string name="server_unregister_error">El dispositivo no se pudo eliminar del servidor Demo (%1$s).</string>
+    <string name="options_register">Registrarse</string>
+    <string name="options_unregister">Cancelar registro</string>
+    <string name="options_clear">Borrar</string>
+    <string name="options_exit">Salir</string>
+
+</resources>

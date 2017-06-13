@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern" >
+
+    <RelativeLayout
+        android:id="@+id/rl_record_ur_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/ll_record_ur_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#837C78"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/label_recordweight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/record_your_weight"
+                    android:textColor="@android:color/white" >
+                </TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" >
+
+                <LinearLayout
+                    android:id="@+id/ll_enter_wgt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/weight"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:hint="@string/hint_enter_your_weight"
+                        android:inputType="numberDecimal"
+                        android:lines="2"
+                        android:paddingLeft="5dp"
+                        android:singleLine="false" >
+                    </EditText>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_margin="5dp"
+                        android:gravity="right|center_vertical" >
+
+                        <TextView
+                            android:id="@+id/kglbs"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="#b5b0ae"
+                            android:drawablePadding="2dp"
+                            android:drawableRight="@drawable/dropdown"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/kg"
+                            android:textColor="@android:color/white" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/header_height"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/redbar_button"
+                android:text="@string/settings_profile_save"
+                android:textColor="@color/White" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/myCustomGalleryView"
+        android:layout_below="@id/rl_record_ur_weight" >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#837C78"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/label_progress_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/progress_chart"
+                android:textColor="@android:color/white" >
+            </TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ll1"
+            android:background="@color/White"
+            android:orientation="horizontal" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_kglbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#b5b0ae"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="90"
+            android:text="@string/kg"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/imageMarkerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/chart"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/markerleftpadding"
+            android:layout_marginRight="@dimen/markerrightpadding"
+            android:background="@color/transparent_background"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/myCustomGalleryView"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/delete_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/black_border"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/dialog_removecoach"
+            layout="@layout/dialog_logout" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="#F3F3F2" >
+
+    <TextView
+        android:id="@+id/center_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/find_coach"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/header_txt_size" />
+
+    <LinearLayout
+        android:id="@+id/leftbutton"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/left_button"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="@dimen/header_image_alignment"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/backarrow" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/search_coachname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/leftbutton"
+        android:background="@drawable/black_border"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.09dp"
+        android:layout_alignParentBottom="true"
+        android:background="#9A9894" />
+
+</RelativeLayout>

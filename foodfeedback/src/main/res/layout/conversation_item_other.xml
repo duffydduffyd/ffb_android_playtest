@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/convItemOther"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp">
+
+    <RelativeLayout
+        android:id="@+id/msgContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/chatleft"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/outgoing_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="10dip"
+            android:singleLine="false"
+            android:textColor="#3D332F"
+            android:textSize="@dimen/list_item_text_size" />
+
+        <TextView
+            android:id="@+id/outgoing_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outgoing_date"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="10dip"
+            android:textColor="#624E42"
+            android:textSize="@dimen/list_item_text_small" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/outgoing_profile_image_holder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/placeholder_bio" />
+
+</RelativeLayout>

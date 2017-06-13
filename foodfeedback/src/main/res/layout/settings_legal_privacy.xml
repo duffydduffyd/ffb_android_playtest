@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_container"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_blank_cell_background"
+    android:orientation="vertical" >
+
+    <!-- First Blank Row -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/setting_separator_background" >
+    </View>
+
+    <!-- terms of service -->
+
+    <RelativeLayout
+        android:id="@+id/termsofservice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/txt_termsofservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/settings_terms_of_service"
+            android:textSize="@dimen/list_item_text_size" />
+
+        <ImageView
+            android:layout_width="@dimen/settings_arrow_image_size"
+            android:layout_height="@dimen/settings_arrow_image_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/disclosure_indicator" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/setting_separator_background" >
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/privacypolicy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/txt_privacypolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/settings_privacy_policy"
+            android:textSize="@dimen/list_item_text_size" />
+
+        <ImageView
+            android:layout_width="@dimen/settings_arrow_image_size"
+            android:layout_height="@dimen/settings_arrow_image_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/disclosure_indicator" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/setting_separator_background" >
+        </View>
+    </RelativeLayout>
+
+</LinearLayout>

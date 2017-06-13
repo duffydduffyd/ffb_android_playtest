@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pattern" >
+
+    <include
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_header" />
+
+    <GridView
+        android:id="@+id/Food_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/grid_horizontal_spacing"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/grid_vertical_spacing" />
+
+    <TextView
+        android:id="@+id/textViewhelp"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewhelp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/Black"
+        android:gravity="bottom|center_horizontal"
+        android:padding="10dp"
+        android:text="@string/take_photo_next_meal"
+        android:textColor="@color/White" />
+
+    <ImageView
+        android:id="@+id/imageViewhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/help_arrow_down" />
+
+</RelativeLayout>

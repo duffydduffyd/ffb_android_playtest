@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_header" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper_settingstab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title" >
+
+        <include
+            android:id="@+id/settings"
+            layout="@layout/settings" />
+
+        <include
+            android:id="@+id/editprofile"
+            layout="@layout/settings_edit_profile" />
+
+        <include
+            android:id="@+id/preferences"
+            layout="@layout/settings_preferences" />
+
+        <include
+            android:id="@+id/aboutfoodfeedback"
+            layout="@layout/settings_details"
+            android:background="@android:color/white" />
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper_legal_and_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/legalandprivacy"
+                layout="@layout/settings_legal_privacy" />
+
+            <include
+                android:id="@+id/termsofservice"
+                layout="@layout/settings_show_termsofservice" />
+
+            <include
+                android:id="@+id/privacypolicy"
+                layout="@layout/settings_show_legalprivacy_doc" />
+        </ViewFlipper>
+
+        <include
+            android:id="@+id/legalanprivacy"
+            layout="@layout/settings_legal_privacy" />
+    </ViewFlipper>
+
+    <RelativeLayout
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/black_border"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/dialog_removecoach"
+            layout="@layout/dialog_logout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profilePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/black_border"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:id="@+id/dialog_removecoach"
+            layout="@layout/profile_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash" >
+
+    <include
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        layout="@layout/tracker_header" />
+
+    <ViewFlipper
+        android:id="@+id/trackerViewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title" >
+
+        <include
+            android:id="@+id/tracker_demoscreen"
+            layout="@layout/tracker_screen_purchase" /> <!-- 1 -->
+
+        <include
+            android:id="@+id/tracker_livescreen"
+            layout="@layout/tracker_screen" /> <!-- 2 -->
+
+    </ViewFlipper>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.09dp"
+        android:layout_alignParentBottom="true"
+        android:background="#9A9894" />
+
+</RelativeLayout>

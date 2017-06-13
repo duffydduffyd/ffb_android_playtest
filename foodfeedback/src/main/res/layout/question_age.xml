@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/common_header" />
+
+    <TextView
+        android:id="@+id/age_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/findcoach_goals_txt_margintop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/findcoach_goals_txt_margintop"
+        android:gravity="center"
+        android:text="@string/what_age_looking"
+        android:textSize="@dimen/findcoach_goals_txt_size" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/age_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/findcoach_goals_txt_margintop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/Black" />
+
+    <RelativeLayout
+        android:id="@+id/anyage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginBottom="@dimen/findcoach_goals_layout_margintop"
+        android:layout_marginTop="@dimen/findcoach_goals_layout_margintop" >
+
+        <ImageView
+            android:id="@+id/anyage_radiobutton"
+            android:layout_width="@dimen/findcoach_goals_radio_widthheight"
+            android:layout_height="@dimen/findcoach_goals_radio_widthheight"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/radiobutton_unfocus" />
+
+        <TextView
+            android:id="@+id/anyage_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/anyage_radiobutton"
+            android:text="@string/any_age"
+            android:textSize="@dimen/findcoach_goals_txt_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aroundmyage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/anyage_layout"
+        android:layout_marginBottom="@dimen/findcoach_goals_layout_margintop"
+        android:layout_marginTop="@dimen/findcoach_goals_layout_margintop" >
+
+        <ImageView
+            android:id="@+id/aroundage_radiobutton"
+            android:layout_width="@dimen/findcoach_goals_radio_widthheight"
+            android:layout_height="@dimen/findcoach_goals_radio_widthheight"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/radiobutton_unfocus" />
+
+        <TextView
+            android:id="@+id/aroundage_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/question_age_maintxt_margintop"
+            android:layout_toRightOf="@+id/aroundage_radiobutton"
+            android:text="@string/around_my_age"
+            android:textSize="@dimen/findcoach_goals_txt_size" />
+
+        <EditText
+            android:id="@+id/month"
+            android:layout_width="@dimen/question_age_editfield_widthtwo"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/aroundage_txt1"
+            android:layout_below="@+id/aroundage_txt1"
+            android:layout_marginTop="@dimen/question_age_editfield_margintop"
+            android:background="@drawable/black_border"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/mm"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="2"
+            android:nextFocusRight="@+id/day"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/day"
+            android:layout_width="@dimen/question_age_editfield_widthtwo"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aroundage_txt1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/question_age_editfield_margintop"
+            android:layout_toRightOf="@+id/month"
+            android:background="@drawable/black_border"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/dd"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="2"
+            android:nextFocusRight="@+id/year"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="@dimen/question_age_editfield_widthfour"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aroundage_txt1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/question_age_editfield_margintop"
+            android:layout_toRightOf="@+id/day"
+            android:background="@drawable/black_border"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/yyyy"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/question_complete_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/findcoach_goals_button_height"
+        android:layout_below="@+id/aroundmyage_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/question_age_button_margintop"
+        android:background="@drawable/redbar_button"
+        android:text="@string/continue_tag"
+        android:textColor="@color/White"
+        android:textSize="@dimen/findacoach_buttontxt_size" />
+
+</RelativeLayout>

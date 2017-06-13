@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/share_header" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLat1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <LinearLayout
+                android:id="@+id/shareWithHeader"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/greybtn"
+                android:paddingLeft="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/share_with"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/loginscreen_txt_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/share_fooditem"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/shareWithHeader"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" >
+
+                <RelativeLayout
+                    android:id="@+id/coach_item_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white" >
+
+                    <ImageView
+                        android:id="@+id/coach_image"
+                        android:layout_width="@dimen/list_icon_size"
+                        android:layout_height="@dimen/list_icon_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="4dp"
+                        android:src="@drawable/placeholder_bio" />
+
+                    <TextView
+                        android:id="@+id/coach_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/loginscreen_txt_size" 
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/coach_image"
+                        android:textColor="@color/Black" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="@dimen/plus_image_size"
+                        android:layout_height="@dimen/plus_image_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/disclosure_indicator" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/email_edittxt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/share_fooditem"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/greybtn"
+                android:paddingLeft="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/initial_message"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/loginscreen_txt_size" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/initial_message"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/email_edittxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/textarea"
+                android:textSize="@dimen/loginscreen_txt_size" 
+                android:gravity="top"
+                android:hint="@string/hint_initial_message"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/loginscreen_loginbutton_height"
+                android:layout_below="@+id/initial_message"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/redbar_button"
+                android:gravity="center"
+                android:text="@string/share_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/loginscreen_logintxt_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

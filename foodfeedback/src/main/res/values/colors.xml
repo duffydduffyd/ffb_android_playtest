@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#770000ff</color>
+    <color name="green">#7700ff00</color>
+    <color name="yellow">#77ffff00</color>
+    <color name="screen_background_black">#ff000000</color>
+    <color name="translucent_background">#e0000000</color>
+    <color name="transparent_background">#00000000</color>
+    <!-- <color name="solid_red">#f00</color> -->
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="White">#FFFFFF</color>
+    
+    <color name="Black">#000000</color>
+    <color name="grey">#624E42</color>
+    <color name="graph_line_grey">#BDBDBD</color>
+    <!-- <color name="red">#CC0000</color> -->
+    <color name="royal_blue1">#306EFF</color>
+    <color name="title_color">#FFFFFF</color>
+    <color name="login_color">#2E2B2B</color>
+    <color name="list_selection_dark">#a3a6a8</color>
+    <color name="list_selection_light">#b6b9bb</color>
+    <color name="test_blue">#ff000066</color>
+    <color name="editfield_bg">#C3D3C4</color>
+    <color name="tabMedium">#2B2B2B</color>
+    <color name="tabDark">#000000</color>
+    <color name="tabTransparent">#10ffffff</color>
+    <color name="tabWhite">#FFFFFF</color>
+    <color name="tabtitle">#BB2C48</color>
+    <color name="tabtitle_nonfocus">#85817D</color>
+    <color name="text_tab_selected">#BB2C48</color>
+    <color name="text_tab_unselected">#85817D</color>
+    <color name="dark_grey">#332924</color>
+    <!-- Settings -->
+    <color name="setting_blank_cell_background">#EDEDED</color>
+    <color name="setting_separator_background">#D5D5D5</color>
+    <color name="setting_buttontxt">#B32440</color>
+    <color name="txt_color">#F3F3F2</color>
+    <color name="ffred">#991F36</color>
+    <color name="graph_green">#ABC135</color>
+	<color name="trans">#80000000</color>
+	
+</resources>

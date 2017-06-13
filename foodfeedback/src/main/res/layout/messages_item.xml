@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/coach_item_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="0dp"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:id="@+id/coach_image"
+            android:layout_width="@dimen/list_icon_size"
+            android:layout_height="@dimen/list_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="0dp"
+            android:padding="2dp"
+            android:paddingRight="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_bio" />
+
+        <TextView
+            android:id="@+id/coach_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/coach_image"
+            
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="@dimen/list_item_text_size" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/plus_image_size"
+            android:layout_height="@dimen/plus_image_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/disclosure_indicator" />
+
+        <TextView
+            android:id="@+id/statusUpdateList"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:background="@drawable/tab_messages_focus"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:textColor="@color/White" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper_coachestab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/coaches_screenn"
+            layout="@layout/coaches_screen" /> <!-- 1 -->
+
+        <include
+            android:id="@+id/findacoach"
+            layout="@layout/findacoach" />
+
+        <include
+            android:id="@+id/searchHeader"
+            layout="@layout/search_headercoach" /> <!-- 2 -->
+    </ViewFlipper>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.09dp"
+        android:layout_alignParentBottom="true"
+        android:background="#9A9894" />
+
+</RelativeLayout>

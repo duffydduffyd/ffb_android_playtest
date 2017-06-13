@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/message_three_header" />
+
+    <ListView
+        android:id="@+id/search_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:dividerHeight="6dp"
+        android:divider="@android:color/transparent"
+        android:layout_marginRight="10dp"
+        android:fadeScrollbars="true" >
+    </ListView>
+    
+    <!-- <ScrollView
+        android:id="@+id/coaches_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:fadeScrollbars="true" >
+
+        <LinearLayout
+            android:id="@+id/coaches_searchname_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView> -->
+
+</RelativeLayout>
